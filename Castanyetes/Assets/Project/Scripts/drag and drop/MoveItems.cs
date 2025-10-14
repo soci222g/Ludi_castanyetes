@@ -10,12 +10,17 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
     
     private float startPosX, startPosY;
 
+    private Value Piece_value;
+
 
     [SerializeField] private float snapPuzzle = 1.5f;
 
     [SerializeField] private List<GameObject> correctForm;
 
-
+    private void Start()
+    {
+        Piece_value = GetComponent<Value>();
+    }
     public void OnBeginDrag(PointerEventData eventData)
     {
         Vector3 mousePos;
@@ -39,7 +44,7 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
                 this.transform.position = correctForm[i].transform.position;
 
                 //enviar dato del objeto
-
+                correctForm[i].GetComponent<reciveInfo>().setPice_Value(Piece_value.GetNum());
             }
         }
     }
