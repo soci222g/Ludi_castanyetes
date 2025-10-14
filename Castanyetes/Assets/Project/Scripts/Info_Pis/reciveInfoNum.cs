@@ -1,25 +1,25 @@
 using System;
 using UnityEngine;
 
-public class reciveInfo : MonoBehaviour
+public class reciveInfoNum : MonoBehaviour
 {
     
 
     [SerializeField] private int pice_Value;
+    [SerializeField] private char TextElement;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         pice_Value = 0;
+        TextElement = ' ';
     }
 
-    // Update is called once per frame
-    void Update()
+   
+    public void setPice_Value(char value)
     {
-        
-    }
+    
+        TextElement = value;
 
-    public void setPice_Value(int value)
-    {
-        pice_Value = value;
+        pice_Value = (int)TextElement;
     }
 }

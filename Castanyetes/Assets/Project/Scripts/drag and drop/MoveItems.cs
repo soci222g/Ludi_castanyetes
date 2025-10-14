@@ -44,7 +44,8 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
                 this.transform.position = correctForm[i].transform.position;
 
                 //enviar dato del objeto
-                correctForm[i].GetComponent<reciveInfo>().setPice_Value(Piece_value.GetNum());
+                if(correctForm[i].GetComponent<reciveInfoNum>())
+                correctForm[i].GetComponent<reciveInfoNum>().setPice_Value(Piece_value.GetLeter());
             }
         }
     }
