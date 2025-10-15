@@ -5,7 +5,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI timerText;
+    [SerializeField] private TextMeshProUGUI timerText;
     private float elapsedTime;
 
     void Start()
@@ -31,9 +31,9 @@ public class Timer : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    public string GetActualTimer()
+    public static string GetActualTimer()
     {
-        return timerText.text;
+        return GameObject.FindObjectOfType<Timer>().timerText.text;
     }
     
 
