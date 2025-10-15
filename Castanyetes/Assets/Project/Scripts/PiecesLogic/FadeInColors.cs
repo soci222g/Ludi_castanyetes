@@ -59,15 +59,6 @@ public class FadeInColors : MonoBehaviour
 
         if (fadeOut)
         {
-            if (initialPiece.alpha > 0)
-            {
-                initialPiece.alpha -= Time.deltaTime;
-                if (initialPiece.alpha == 0)
-                {
-                    fadeOut = false;
-                }
-            }
-
             if (initialPiece.alpha > 0 && finalPiece.alpha > 0)
             {
                 initialPiece.alpha -= Time.deltaTime;
