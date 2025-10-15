@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class FadeInColors : MonoBehaviour
 {
-    [SerializeField] private CanvasGroup myElement;
+    [SerializeField] private CanvasGroup initialPiece;
+    [SerializeField] private CanvasGroup finalPiece;
+    [SerializeField] private CanvasGroup secondPiece;
+    [SerializeField] private CanvasGroup middlePiece;
+    [SerializeField] private CanvasGroup fourthPiece;
     [SerializeField] private bool fadeIn = false;
     [SerializeField] private bool fadeOut = false;
     [SerializeField] private float fadeOpacity = 0.5f;
@@ -20,17 +24,17 @@ public class FadeInColors : MonoBehaviour
 
     private void Start()
     {
-        myElement.alpha = 0;
+        initialPiece.alpha = 0;
     }
 
     private void Update()
     {
         if (fadeIn)
         {
-            if (myElement.alpha < fadeOpacity)
+            if (initialPiece.alpha < fadeOpacity)
             {
-                myElement.alpha += Time.deltaTime;
-                if (myElement.alpha >= fadeOpacity)
+                initialPiece.alpha += Time.deltaTime;
+                if (initialPiece.alpha >= fadeOpacity)
                 {
                     fadeIn = false;
                 }
@@ -39,10 +43,10 @@ public class FadeInColors : MonoBehaviour
 
         if (fadeOut)
         {
-            if (myElement.alpha > 0)
+            if (initialPiece.alpha > 0)
             {
-                myElement.alpha -= Time.deltaTime;
-                if (myElement.alpha == 0)
+                initialPiece.alpha -= Time.deltaTime;
+                if (initialPiece.alpha == 0)
                 {
                     fadeOut = false;
                 }

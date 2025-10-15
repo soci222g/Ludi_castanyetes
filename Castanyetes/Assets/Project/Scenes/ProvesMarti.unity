@@ -148,7 +148,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f48bd380e0d4644e88875147bef16b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myElement: {fileID: 158054184}
+  initialPiece: {fileID: 158054184}
+  finalPiece: {fileID: 0}
+  secondPiece: {fileID: 0}
+  middlePiece: {fileID: 0}
+  fourthPiece: {fileID: 0}
   fadeIn: 0
   fadeOut: 0
   fadeOpacity: 0.5
