@@ -85,23 +85,23 @@ public class ManagerLevelNum : MonoBehaviour
             result = numberElements[0];
         }
         for (int i = 0; numEquacions > i; i++) {
-
-            switch (OperadorCode[i])
-            {
-                case 1:
-                    result += numberElements[i];
-                    break;
-                case 2:
-                    result -= numberElements[i];
-                    break;
-                case 3:
-                    result *= numberElements[i];
-                    break;
-            }
             if (i == 0)
             {
                 result = numberElements[i];
             }
+            switch (OperadorCode[i])
+            {
+                case 1:
+                    result += numberElements[i + 1];
+                    break;
+                case 2:
+                    result -= numberElements[i + 1];
+                    break;
+                case 3:
+                    result *= numberElements[i + 1];
+                    break;
+            }
+           
 
         }
 
