@@ -5,12 +5,17 @@ public class reciveInfoNum : MonoBehaviour
 {
     
 
-    [SerializeField] private int pice_Value;
-    [SerializeField] private char TextElement;
+   
+     [SerializeField] private char TextElement;
+
+    [SerializeField] private ManagerLevelNum manager;
+
+    [SerializeField] private int piss_Number;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        pice_Value = 0;
+
         TextElement = ' ';
     }
 
@@ -20,6 +25,9 @@ public class reciveInfoNum : MonoBehaviour
     
         TextElement = value;
 
-        pice_Value = (int)TextElement;
+
+
+        manager.setElemetns(TextElement, piss_Number);
+
     }
 }
