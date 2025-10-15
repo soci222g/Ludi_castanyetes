@@ -39,10 +39,10 @@ public class FadeInColors : MonoBehaviour
 
         if (fadeOut)
         {
-            if (myElement.alpha > fadeOpacity)
+            if (myElement.alpha > 0)
             {
                 myElement.alpha -= Time.deltaTime;
-                if (myElement.alpha <= fadeOpacity)
+                if (myElement.alpha == 0)
                 {
                     fadeOut = false;
                 }
