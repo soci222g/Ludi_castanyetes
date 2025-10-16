@@ -15,6 +15,7 @@ public class StarsController : MonoBehaviour
     [SerializeField] Image Notstar3;
     [SerializeField] Image titoHappy;
     [SerializeField] Image titoSad;
+
     private string timer;
 
     void Start()
@@ -27,11 +28,6 @@ public class StarsController : MonoBehaviour
         Notstar1.enabled = false;
         Notstar2.enabled = false;
         Notstar3.enabled = false;
-    }
-
-    void Update()
-    {
-        
     }
 
     public void LevelFinished()
