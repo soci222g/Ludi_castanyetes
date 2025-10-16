@@ -10,6 +10,7 @@ public class FadeInColors : MonoBehaviour
     [SerializeField] private CanvasGroup middlePiece;
     [SerializeField] private CanvasGroup fourthPiece;
     [SerializeField] private CanvasGroup finalPiece;
+    [SerializeField] private GameObject win;
     [SerializeField] private float fadeOpacity = 0.66f;
     private bool fadeIn = false;
     private bool fadeOut = false;
@@ -55,7 +56,11 @@ public class FadeInColors : MonoBehaviour
                     fadeIn = false;
                 }
             }
-
+            if (!fadeIn)
+            { 
+                win.SetActive(true);
+                win.GetComponent<StarsController>().LevelFinished();
+            }
         }
 
         if (fadeOut)

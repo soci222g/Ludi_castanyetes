@@ -9,8 +9,6 @@ public class ManagerLevelNum : MonoBehaviour
 
     [SerializeField] private int numBoxes;
 
-    [SerializeField] private GameObject win;
-
     private List<char> ListChars = new List<char>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -115,7 +113,7 @@ public class ManagerLevelNum : MonoBehaviour
     {
         if(calcul == finalNum)
         {
-            win.SetActive(true);
+            GetComponent<FadeInColors>().ShowElement();
         }
     }
   

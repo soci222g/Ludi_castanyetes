@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
+        Resume();
         elapsedTime = 0f;
         timerText.text = "00:00";
     }
