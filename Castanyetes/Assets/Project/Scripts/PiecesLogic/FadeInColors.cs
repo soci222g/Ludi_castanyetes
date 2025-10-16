@@ -13,6 +13,7 @@ public class FadeInColors : MonoBehaviour
     [SerializeField] private float fadeOpacity = 0.66f;
     private bool fadeIn = false;
     private bool fadeOut = false;
+    private bool fadeInImage = true;
 
     public void ShowElement()
     {
@@ -75,6 +76,24 @@ public class FadeInColors : MonoBehaviour
                 if (middlePiece.alpha == 0)
                 {
                     fadeOut = false;
+                }
+            }
+        }
+    }
+
+
+    public void FadeThisImage(CanvasGroup image)
+    {
+        fadeInImage = true;
+
+        if (fadeInImage)
+        {
+            if (image.alpha < fadeOpacity)
+            {
+                middlePiece.alpha += Time.deltaTime;
+                if (middlePiece.alpha >= fadeOpacity)
+                {
+                    fadeInImage = false;
                 }
             }
         }
