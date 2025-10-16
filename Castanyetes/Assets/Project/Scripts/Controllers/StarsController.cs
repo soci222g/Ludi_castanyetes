@@ -7,6 +7,7 @@ using TMPro;
 public class StarsController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI totalTimerText;
+    [SerializeField] Timer timerObj;
     [SerializeField] Image star1;
     [SerializeField] Image star2;
     [SerializeField] Image star3;
@@ -20,23 +21,28 @@ public class StarsController : MonoBehaviour
 
     void Start()
     {
-        titoHappy.enabled = false;
+       /* titoHappy.enabled = false;
         titoSad.enabled = false;
         star1.enabled = false;
         star2.enabled = false;
         star3.enabled = false;
         Notstar1.enabled = false;
         Notstar2.enabled = false;
-        Notstar3.enabled = false;
+        Notstar3.enabled = false;*/
     }
 
     public void LevelFinished()
     {
+        timerObj.Pause();
         timer = Timer.GetActualTimer();
         totalTimerText.text = timer;
 
         if (timer.CompareTo("00:30") <= 0)
         {
+            Notstar1.enabled = false;
+            Notstar2.enabled = false;
+            Notstar3.enabled = false;
+            titoSad.enabled = false;
             star1.enabled = true;
             star2.enabled = true;
             star3.enabled = true;
@@ -44,6 +50,10 @@ public class StarsController : MonoBehaviour
         }
         else if (timer.CompareTo("00:45") <= 0)
         {
+            Notstar1.enabled = false;
+            Notstar2.enabled = false;
+            star3.enabled = false;
+            titoSad.enabled = false;
             star1.enabled = true;
             star2.enabled = true;
             Notstar3.enabled = true;
@@ -51,6 +61,10 @@ public class StarsController : MonoBehaviour
         }
         else if (timer.CompareTo("01:00") <= 0)
         {
+            Notstar1.enabled = false;
+            star2.enabled = false;
+            star3.enabled = false;
+            titoSad.enabled = false;
             star1.enabled = true;
             Notstar2.enabled = true;
             Notstar3.enabled = true;
@@ -58,6 +72,10 @@ public class StarsController : MonoBehaviour
         }
         else
         {
+            titoHappy.enabled = false;
+            star1.enabled = false;
+            star2.enabled = false;
+            star3.enabled = false;
             Notstar1.enabled = true;
             Notstar2.enabled = true;
             Notstar3.enabled = true;
