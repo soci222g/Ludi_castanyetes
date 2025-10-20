@@ -8,7 +8,8 @@ public class reciveInfoNum : MonoBehaviour
    
      [SerializeField] private char TextElement;
 
-    [SerializeField] private ManagerLevelNum manager;
+    [SerializeField] private ManagerLevelNum Num;
+    [SerializeField] private ManagerLevelString str;
 
     [SerializeField] private int piss_Number;
 
@@ -25,9 +26,12 @@ public class reciveInfoNum : MonoBehaviour
     
         TextElement = value;
 
+        if(Num != null) 
+        Num.setElemetns(TextElement, piss_Number);
 
 
-        manager.setElemetns(TextElement, piss_Number);
-
+        if(str != null)
+            str.setElemetns(TextElement, piss_Number);
+        
     }
 }
