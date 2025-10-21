@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class reciveInfoNum : MonoBehaviour
 {
-    
 
+    private bool placedObject;
    
      [SerializeField] private char TextElement;
 
@@ -16,11 +16,12 @@ public class reciveInfoNum : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        placedObject = false;
         TextElement = ' ';
     }
 
-   
+
+    public bool GetPlacerObject() { return placedObject; }
     public void setPice_Value(char value)
     {
     
@@ -32,6 +33,23 @@ public class reciveInfoNum : MonoBehaviour
 
         if(str != null)
             str.setElemetns(TextElement, piss_Number);
-        
+
+
+        placedObject = true;
+    }
+
+    public void resetPiceValue()
+    {
+        TextElement = ' ';
+
+        if (Num != null)
+            Num.setElemetns(TextElement, piss_Number);
+
+
+        if (str != null)
+            str.setElemetns(TextElement, piss_Number);
+
+
+        placedObject = false;
     }
 }
