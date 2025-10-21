@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 239401972}
-  - component: {fileID: 239401971}
+  - component: {fileID: 239401973}
   m_Layer: 0
   m_Name: ManagerLevel
   m_TagString: Untagged
@@ -136,21 +136,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &239401971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239401970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dde74e422e63b9942ad5e6f703452118, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  finalNum: 54
-  numBoxes: 3
-  win: {fileID: 477967527}
 --- !u!4 &239401972
 Transform:
   m_ObjectHideFlags: 0
@@ -166,6 +151,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &239401973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239401970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebceaf67954094d47832b0bfdb14c9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WordList:
+  - cap
+  - pac
+  numBoxes: 3
+  WinTest: {fileID: 477967527}
 --- !u!1 &457409757
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +417,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 649, y: -189}
+  m_AnchoredPosition: {x: 310, y: -177}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.50000024, y: 0.4999999}
 --- !u!114 &485443934
@@ -430,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469b3f91c9b5a3544bdecde5682fc1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Element: 52
+  Element: 112
 --- !u!61 &485443935
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -663,7 +665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469b3f91c9b5a3544bdecde5682fc1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Element: 43
+  Element: 97
 --- !u!61 &672891816
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -901,7 +903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextElement: 0
-  manager: {fileID: 239401971}
+  Num: {fileID: 0}
+  str: {fileID: 239401973}
   piss_Number: 2
 --- !u!1 &1161182332
 GameObject:
@@ -1077,7 +1080,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextElement: 0
-  manager: {fileID: 239401971}
+  Num: {fileID: 0}
+  str: {fileID: 239401973}
   piss_Number: 3
 --- !u!1 &2003545919
 GameObject:
@@ -1215,7 +1219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextElement: 0
-  manager: {fileID: 239401971}
+  Num: {fileID: 0}
+  str: {fileID: 239401973}
   piss_Number: 1
 --- !u!1 &2121896668
 GameObject:
@@ -1476,7 +1481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469b3f91c9b5a3544bdecde5682fc1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Element: 53
+  Element: 99
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
