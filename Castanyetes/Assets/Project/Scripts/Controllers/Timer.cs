@@ -11,13 +11,13 @@ public class Timer : MonoBehaviour
     void Start()
     {
         Resume();
-        elapsedTime = 0f;
-        timerText.text = "00:00";
+        elapsedTime = 120f;
+        timerText.text = "02:00";
     }
 
     void Update()
     {
-        elapsedTime += Time.deltaTime;
+        elapsedTime -= Time.deltaTime;
         int minutes = Mathf.FloorToInt(elapsedTime / 60f);
         int seconds = Mathf.FloorToInt(elapsedTime % 60f);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
