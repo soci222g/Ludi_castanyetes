@@ -9,11 +9,10 @@ public class ManagerLevelNum : MonoBehaviour
     [SerializeField] private int finalNum;
 
     [SerializeField] private int numBoxes;
-
-
+    [SerializeField] private List<int> numsUsed;
+    [SerializeField] private int numCorrectAnser;
+ 
     private List<char> listChars = new List<char>();
-
-    private List<string> saveSolutions = new List<string>();
 
 
     
@@ -25,7 +24,7 @@ public class ManagerLevelNum : MonoBehaviour
         for (int i = 0; i < numBoxes; i++) {
             listChars.Add(' ');
         }
-
+        
     }
 
 
@@ -50,6 +49,7 @@ public class ManagerLevelNum : MonoBehaviour
 
         List<int>OperadorCode = new List<int>();
     
+        
 
         for (int i = 0; i < listChars.Count; i++) {
 
@@ -85,15 +85,20 @@ public class ManagerLevelNum : MonoBehaviour
             
         }
 
-       
-            
+        List<int> numUsedOrdened = new List<int>(numberElements);
         
-        if(numEquacions == 0)
+
+        numUsedOrdened.Sort();
+        
+
+
+
+        if (numEquacions == 0)
         {
             result = numberElements[0];
         }
         for (int i = 0; numEquacions > i; i++) {
-            if (i == 0)
+            if(i == 0)
             {
                 result = numberElements[i];
             }
@@ -109,46 +114,49 @@ public class ManagerLevelNum : MonoBehaviour
                     result *= numberElements[i + 1];
                     break;
             }
-           
-
+            
+            
         }
-
+        
 
 
         Debug.Log(result);
-        CheckResult(result);
+       
+        CheckResult(result, numUsedOrdened);
     }
 
-    private void CheckResult(int calcul)
+    private void CheckResult(int calcul, List<int> numUsedOrdened)
     {
-        if(calcul == finalNum)
+
+        if (calcul == finalNum)
+        {
+            CheckNumAreCorrect(numUsedOrdened);
+          
+        }
+    }
+
+    private void CheckNumAreCorrect(List<int> numUsedOrdened)
+    {
+        int numMaix = 0;
+        for(int i = 0; i < numUsedOrdened.Count; i++)
+        {
+            numMaix = numMaix*10 + numUsedOrdened[i];
+        }
+   
+        for (int i = 0; i < numsUsed.Count; i++) {
+            if (numsUsed[i] == numMaix)
+                return;
+            
+        }
+        numsUsed.Add(numMaix);
+        finalResuit();
+    }
+    private void finalResuit()
+    {
+        if (numsUsed.Count >= numCorrectAnser)
         {
             GetComponent<FadeInColors>().ShowElement();
-
-            string FinalWord = "";
-
-            FinalWord = new string(listChars.ToArray());
-
-            checkcalculation(FinalWord);
-
         }
-    }
-  
-    private void checkcalculation(string solution)
-    {
-        if(saveSolutions.Count == 0)
-        {
-            saveSolutions.Add(solution);
-        }
-        for(int i = 0; i < saveSolutions.Count; i++)
-        {
-            
-            if(solution == saveSolutions[i])
-            {
-
-            }
-        }
-
     }
 
 }
