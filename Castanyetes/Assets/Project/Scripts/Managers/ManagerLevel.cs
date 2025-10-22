@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 
 public class ManagerLevelNum : MonoBehaviour
@@ -9,13 +10,20 @@ public class ManagerLevelNum : MonoBehaviour
 
     [SerializeField] private int numBoxes;
 
-    private List<char> ListChars = new List<char>();
+
+    private List<char> listChars = new List<char>();
+
+    private List<string> saveSolutions = new List<string>();
+
+
+    
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         for (int i = 0; i < numBoxes; i++) {
-            ListChars.Add(' ');
+            listChars.Add(' ');
         }
 
     }
@@ -25,7 +33,7 @@ public class ManagerLevelNum : MonoBehaviour
     public void setElemetns(char GetElements, int place){
       
 
-        ListChars[place - 1] = GetElements;
+        listChars[place - 1] = GetElements;
 
         calculateResult();
 
@@ -43,11 +51,11 @@ public class ManagerLevelNum : MonoBehaviour
         List<int>OperadorCode = new List<int>();
     
 
-        for (int i = 0; i < ListChars.Count; i++) {
+        for (int i = 0; i < listChars.Count; i++) {
 
 
 
-            switch (ListChars[i])
+            switch (listChars[i])
             {
                 
                 case '+':
@@ -68,16 +76,18 @@ public class ManagerLevelNum : MonoBehaviour
 
                         break;
                 default:
-                    if(ListChars[i] != ' ')
-                        numberElements[numEquacions] = numberElements[numEquacions]*10 + (int)ListChars[i] - 48;
-
+                    if(listChars[i] != ' ')
+                        numberElements[numEquacions] = numberElements[numEquacions]*10 + (int)listChars[i] - 48;
+                    
                     break;
 
             }
             
         }
 
-
+       
+            
+        
         if(numEquacions == 0)
         {
             result = numberElements[0];
@@ -114,8 +124,31 @@ public class ManagerLevelNum : MonoBehaviour
         if(calcul == finalNum)
         {
             GetComponent<FadeInColors>().ShowElement();
+
+            string FinalWord = "";
+
+            FinalWord = new string(listChars.ToArray());
+
+            checkcalculation(FinalWord);
+
         }
     }
   
+    private void checkcalculation(string solution)
+    {
+        if(saveSolutions.Count == 0)
+        {
+            saveSolutions.Add(solution);
+        }
+        for(int i = 0; i < saveSolutions.Count; i++)
+        {
+            
+            if(solution == saveSolutions[i])
+            {
+
+            }
+        }
+
+    }
 
 }
