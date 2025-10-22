@@ -34,12 +34,16 @@ public class ManagerLevelString : MonoBehaviour
     {
         string FinalWord = "";
 
+     
+
         FinalWord = new string(ListChars.ToArray());
 
         Debug.Log(FinalWord);
         for (int i = 0; i < WordList.Count; i++) {
             if (WordList[i] == FinalWord) {
+                WordList.RemoveAt(i);
 
+                if(WordList.Count == 0)
                 WinTest.SetActive(true);
                 // GetComponent<FadeInColors>().ShowElement();
             }

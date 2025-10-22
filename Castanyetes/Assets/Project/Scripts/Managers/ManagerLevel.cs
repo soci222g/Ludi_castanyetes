@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 
 public class ManagerLevelNum : MonoBehaviour
@@ -8,16 +9,22 @@ public class ManagerLevelNum : MonoBehaviour
     [SerializeField] private int finalNum;
 
     [SerializeField] private int numBoxes;
+    [SerializeField] private List<int> numsUsed;
+    [SerializeField] private int numCorrectAnser;
+ 
+    private List<char> listChars = new List<char>();
 
-    private List<char> ListChars = new List<char>();
+
+    
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         for (int i = 0; i < numBoxes; i++) {
-            ListChars.Add(' ');
+            listChars.Add(' ');
         }
-
+        
     }
 
 
@@ -25,7 +32,7 @@ public class ManagerLevelNum : MonoBehaviour
     public void setElemetns(char GetElements, int place){
       
 
-        ListChars[place - 1] = GetElements;
+        listChars[place - 1] = GetElements;
 
         calculateResult();
 
@@ -42,12 +49,13 @@ public class ManagerLevelNum : MonoBehaviour
 
         List<int>OperadorCode = new List<int>();
     
+        
 
-        for (int i = 0; i < ListChars.Count; i++) {
+        for (int i = 0; i < listChars.Count; i++) {
 
 
 
-            switch (ListChars[i])
+            switch (listChars[i])
             {
                 
                 case '+':
@@ -68,22 +76,29 @@ public class ManagerLevelNum : MonoBehaviour
 
                         break;
                 default:
-                    if(ListChars[i] != ' ')
-                        numberElements[numEquacions] = numberElements[numEquacions]*10 + (int)ListChars[i] - 48;
-
+                    if(listChars[i] != ' ')
+                        numberElements[numEquacions] = numberElements[numEquacions]*10 + (int)listChars[i] - 48;
+                    
                     break;
 
             }
             
         }
 
+        List<int> numUsedOrdened = new List<int>(numberElements);
+        
 
-        if(numEquacions == 0)
+        numUsedOrdened.Sort();
+        
+
+
+
+        if (numEquacions == 0)
         {
             result = numberElements[0];
         }
         for (int i = 0; numEquacions > i; i++) {
-            if (i == 0)
+            if(i == 0)
             {
                 result = numberElements[i];
             }
@@ -99,23 +114,49 @@ public class ManagerLevelNum : MonoBehaviour
                     result *= numberElements[i + 1];
                     break;
             }
-           
-
+            
+            
         }
-
+        
 
 
         Debug.Log(result);
-        CheckResult(result);
+       
+        CheckResult(result, numUsedOrdened);
     }
 
-    private void CheckResult(int calcul)
+    private void CheckResult(int calcul, List<int> numUsedOrdened)
     {
-        if(calcul == finalNum)
+
+        if (calcul == finalNum)
+        {
+            CheckNumAreCorrect(numUsedOrdened);
+          
+        }
+    }
+
+    private void CheckNumAreCorrect(List<int> numUsedOrdened)
+    {
+        int numMaix = 0;
+        for(int i = 0; i < numUsedOrdened.Count; i++)
+        {
+            numMaix = numMaix*10 + numUsedOrdened[i];
+        }
+   
+        for (int i = 0; i < numsUsed.Count; i++) {
+            if (numsUsed[i] == numMaix)
+                return;
+            
+        }
+        numsUsed.Add(numMaix);
+        finalResuit();
+    }
+    private void finalResuit()
+    {
+        if (numsUsed.Count >= numCorrectAnser)
         {
             GetComponent<FadeInColors>().ShowElement();
         }
     }
-  
 
 }
