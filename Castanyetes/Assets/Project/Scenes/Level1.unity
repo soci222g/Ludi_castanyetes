@@ -996,6 +996,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalNum: 6
   numBoxes: 3
+  numsUsed: 
+  numCorrectAnser: 5
 --- !u!4 &492510009
 Transform:
   m_ObjectHideFlags: 0
