@@ -16,28 +16,20 @@ public class StarsController : MonoBehaviour
     [SerializeField] Image Notstar3;
     [SerializeField] Image titoHappy;
     [SerializeField] Image titoSad;
+    [SerializeField] Button nextLvlButton;
+    [SerializeField] Button restartLvlButton;
 
     private string timer;
-
-    void Start()
-    {
-       /* titoHappy.enabled = false;
-        titoSad.enabled = false;
-        star1.enabled = false;
-        star2.enabled = false;
-        star3.enabled = false;
-        Notstar1.enabled = false;
-        Notstar2.enabled = false;
-        Notstar3.enabled = false;*/
-    }
 
     public void LevelFinished()
     {
         timerObj.Pause();
         timer = Timer.GetActualTimer();
         totalTimerText.text = timer;
+        nextLvlButton.gameObject.SetActive(true);
+        restartLvlButton.gameObject.SetActive(false);
 
-        if (timer.CompareTo("00:30") <= 0)
+        if (timer.CompareTo("01:30") >= 0)
         {
             Notstar1.enabled = false;
             Notstar2.enabled = false;
@@ -48,7 +40,7 @@ public class StarsController : MonoBehaviour
             star3.enabled = true;
             titoHappy.enabled = true;
         }
-        else if (timer.CompareTo("00:45") <= 0)
+        else if (timer.CompareTo("00:45") >= 0)
         {
             Notstar1.enabled = false;
             Notstar2.enabled = false;
@@ -59,7 +51,7 @@ public class StarsController : MonoBehaviour
             Notstar3.enabled = true;
             titoHappy.enabled = true;
         }
-        else if (timer.CompareTo("01:00") <= 0)
+        else if (timer.CompareTo("00:01") >= 0)
         {
             Notstar1.enabled = false;
             star2.enabled = false;
@@ -70,16 +62,24 @@ public class StarsController : MonoBehaviour
             Notstar3.enabled = true;
             titoHappy.enabled = true;
         }
-        else
-        {
-            titoHappy.enabled = false;
-            star1.enabled = false;
-            star2.enabled = false;
-            star3.enabled = false;
-            Notstar1.enabled = true;
-            Notstar2.enabled = true;
-            Notstar3.enabled = true;
-            titoSad.enabled = true;
-        }
     }
+
+    public void LevelFailed()
+    {
+        timerObj.Pause();
+        timer = Timer.GetActualTimer();
+        totalTimerText.text = timer;
+        nextLvlButton.gameObject.SetActive(false);
+        restartLvlButton.gameObject.SetActive(true);
+
+        star1.enabled = false;
+        star2.enabled = false;
+        star3.enabled = false;
+        Notstar1.enabled = true;
+        Notstar2.enabled = true;
+        Notstar3.enabled = true;
+        titoHappy.enabled = false;
+        titoSad.enabled = true;
+    }
+
 }
