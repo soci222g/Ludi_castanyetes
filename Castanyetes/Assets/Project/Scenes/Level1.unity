@@ -1136,7 +1136,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1507854331}
   m_Father: {fileID: 1300996048}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.68986523, y: 0.24342899}
@@ -3136,7 +3137,6 @@ RectTransform:
   - {fileID: 1437685235}
   - {fileID: 511483834}
   - {fileID: 1790023402}
-  - {fileID: 1507854331}
   - {fileID: 1854353846}
   - {fileID: 1220444618}
   - {fileID: 1525491662}
@@ -4366,12 +4366,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1300996048}
+  m_Father: {fileID: 511483834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.70675975, y: 0.753387}
-  m_AnchorMax: {x: 0.775565, y: 0.8817132}
-  m_AnchoredPosition: {x: 0.6883545, y: 0.38616943}
-  m_SizeDelta: {x: -2.9960938, y: -2.6756592}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -2.9206161, y: 175.61174}
+  m_SizeDelta: {x: -58.656715, y: -391.91388}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1507854332
 MonoBehaviour:
@@ -4420,7 +4420,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.55
+  m_fontSize: 70.2
   m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 1
