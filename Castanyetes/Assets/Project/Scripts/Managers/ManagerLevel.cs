@@ -164,14 +164,6 @@ public class ManagerLevelNum : MonoBehaviour
             
         }
         numsUsed.Add(numMaix);
-        finalResuit();
+        GetComponent<FadeInColors>().ShowElement();
     }
-    private void finalResuit()
-    {
-        if (numsUsed.Count >= numCorrectAnser)
-        {
-            GetComponent<FadeInColors>().ShowElement();
-        }
-    }
-
 }
