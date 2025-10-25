@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: 386f9e098ccb54c41bb5c77df17fd142
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6223283620932281619
+    second: castanyetaIdleSad_0
+  - first:
+      213: -8184466501294266535
+    second: castanyetaIdleSad_1
+  - first:
+      213: -8823121907427021741
+    second: castanyetaIdleSad_2
+  - first:
+      213: -368982434226580473
+    second: castanyetaIdleSad_3
+  - first:
+      213: 9038223813910545014
+    second: castanyetaIdleSad_4
+  - first:
+      213: -616786547820844195
+    second: castanyetaIdleSad_5
+  - first:
+      213: 5697151264518273857
+    second: castanyetaIdleSad_6
+  - first:
+      213: -1174097700727583984
+    second: castanyetaIdleSad_7
+  - first:
+      213: -4478494131603071179
+    second: castanyetaIdleSad_8
+  - first:
+      213: -9161002371102042961
+    second: castanyetaIdleSad_9
+  - first:
+      213: 6389864543136332842
+    second: castanyetaIdleSad_10
+  - first:
+      213: -4784343731610808278
+    second: castanyetaIdleSad_11
+  - first:
+      213: -4632782184103829934
+    second: castanyetaIdleSad_12
+  - first:
+      213: 2028559282494485666
+    second: castanyetaIdleSad_13
+  - first:
+      213: -6703973974450980521
+    second: castanyetaIdleSad_14
+  - first:
+      213: -6191758468789518731
+    second: castanyetaIdleSad_15
+  - first:
+      213: -687189118114375535
+    second: castanyetaIdleSad_16
+  - first:
+      213: -111837384815066463
+    second: castanyetaIdleSad_17
+  - first:
+      213: 2704957426101689269
+    second: castanyetaIdleSad_18
+  - first:
+      213: -911415431229882063
+    second: castanyetaIdleSad_19
+  - first:
+      213: 5650193243822466705
+    second: castanyetaIdleSad_20
+  - first:
+      213: -1115385273644154180
+    second: castanyetaIdleSad_21
+  - first:
+      213: -1207348213895240251
+    second: castanyetaIdleSad_22
+  - first:
+      213: -5155864231115059129
+    second: castanyetaIdleSad_23
+  - first:
+      213: -4800397220828152934
+    second: castanyetaIdleSad_24
+  - first:
+      213: -293204831872810254
+    second: castanyetaIdleSad_25
+  - first:
+      213: -2188880019145744265
+    second: castanyetaIdleSad_26
+  - first:
+      213: -1247153611788664555
+    second: castanyetaIdleSad_27
+  - first:
+      213: 5484289238814309122
+    second: castanyetaIdleSad_28
+  - first:
+      213: 8738788063795643015
+    second: castanyetaIdleSad_29
+  - first:
+      213: -2709202478712926049
+    second: castanyetaIdleSad_30
+  - first:
+      213: 1674083188695525268
+    second: castanyetaIdleSad_31
+  - first:
+      213: -7553548735002490398
+    second: castanyetaIdleSad_32
+  - first:
+      213: 7361174532751235636
+    second: castanyetaIdleSad_33
+  - first:
+      213: 4889502485295206826
+    second: castanyetaIdleSad_34
+  - first:
+      213: -400685360840590962
+    second: castanyetaIdleSad_35
+  - first:
+      213: 7667562156708529158
+    second: castanyetaIdleSad_36
+  - first:
+      213: 322089815684253001
+    second: castanyetaIdleSad_37
+  - first:
+      213: -1031363847559319097
+    second: castanyetaIdleSad_38
+  - first:
+      213: -4904235252827373645
+    second: castanyetaIdleSad_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: castanyetaIdleSad_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 14418
+        width: 1617
+        height: 1602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315ec2a1b7b8d5650800000000000000
+      internalID: 6223283620932281619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_1
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 14418
+        width: 1616
+        height: 1602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957654a841fea6e80800000000000000
+      internalID: -8184466501294266535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_2
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 14418
+        width: 1617
+        height: 1600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c68d14f59fd8580800000000000000
+      internalID: -8823121907427021741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_3
+      rect:
+        serializedVersion: 2
+        x: 4898
+        y: 14418
+        width: 1616
+        height: 1598
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704d0975e6c11eaf0800000000000000
+      internalID: -368982434226580473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 12816
+        width: 1617
+        height: 1596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6724d941ca83e6d70800000000000000
+      internalID: 9038223813910545014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_5
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 12816
+        width: 1616
+        height: 1594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b26e217ebb077f0800000000000000
+      internalID: -616786547820844195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_6
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 12816
+        width: 1617
+        height: 1592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b7749e3e8501f40800000000000000
+      internalID: 5697151264518273857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_7
+      rect:
+        serializedVersion: 2
+        x: 4896
+        y: 12816
+        width: 1616
+        height: 1590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b8780ac54c4bfe0800000000000000
+      internalID: -1174097700727583984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 11214
+        width: 1617
+        height: 1588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f902db05139d1c0800000000000000
+      internalID: -4478494131603071179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_9
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 11214
+        width: 1616
+        height: 1586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa493fb61e49dd080800000000000000
+      internalID: -9161002371102042961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_10
+      rect:
+        serializedVersion: 2
+        x: 3265
+        y: 11214
+        width: 1617
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c318072fb5da850800000000000000
+      internalID: 6389864543136332842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_11
+      rect:
+        serializedVersion: 2
+        x: 4894
+        y: 11214
+        width: 1616
+        height: 1582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2098f189b89a9db0800000000000000
+      internalID: -4784343731610808278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 9612
+        width: 1617
+        height: 1580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e9bba262d05bfb0800000000000000
+      internalID: -4632782184103829934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_13
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 9612
+        width: 1616
+        height: 1578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4b7ee6be3e62c10800000000000000
+      internalID: 2028559282494485666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_14
+      rect:
+        serializedVersion: 2
+        x: 3263
+        y: 9612
+        width: 1617
+        height: 1576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759b26d7033b6f2a0800000000000000
+      internalID: -6703973974450980521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_15
+      rect:
+        serializedVersion: 2
+        x: 4892
+        y: 9612
+        width: 1616
+        height: 1574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57eb8cc5a74721aa0800000000000000
+      internalID: -6191758468789518731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 8010
+        width: 1617
+        height: 1572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1985741532d9676f0800000000000000
+      internalID: -687189118114375535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_17
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 8010
+        width: 1616
+        height: 1570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a24d75bd7ca27ef0800000000000000
+      internalID: -111837384815066463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_18
+      rect:
+        serializedVersion: 2
+        x: 3261
+        y: 8010
+        width: 1617
+        height: 1568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb98539270f98520800000000000000
+      internalID: 2704957426101689269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_19
+      rect:
+        serializedVersion: 2
+        x: 4890
+        y: 8010
+        width: 1616
+        height: 1566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131cbb28e700a53f0800000000000000
+      internalID: -911415431229882063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6408
+        width: 1617
+        height: 1564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196a95ab1d4896e40800000000000000
+      internalID: 5650193243822466705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_21
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 6408
+        width: 1616
+        height: 1562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb20db0d00b5580f0800000000000000
+      internalID: -1115385273644154180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_22
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 6408
+        width: 1617
+        height: 1560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5629e3233ae3fe0800000000000000
+      internalID: -1207348213895240251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_23
+      rect:
+        serializedVersion: 2
+        x: 4888
+        y: 6408
+        width: 1616
+        height: 1558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7409e3a7cc0b278b0800000000000000
+      internalID: -5155864231115059129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4806
+        width: 1616
+        height: 1559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9bf3c74920916db0800000000000000
+      internalID: -4800397220828152934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_25
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 4806
+        width: 1616
+        height: 1562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f20bc542c35eebf0800000000000000
+      internalID: -293204831872810254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_26
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 4806
+        width: 1617
+        height: 1565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7702ed248398f91e0800000000000000
+      internalID: -2188880019145744265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_27
+      rect:
+        serializedVersion: 2
+        x: 4890
+        y: 4806
+        width: 1617
+        height: 1568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 511cdf4d56831bee0800000000000000
+      internalID: -1247153611788664555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_28
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3204
+        width: 1616
+        height: 1571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b3605710c1c1c40800000000000000
+      internalID: 5484289238814309122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_29
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 3204
+        width: 1616
+        height: 1574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78286f5a179664970800000000000000
+      internalID: 8738788063795643015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_30
+      rect:
+        serializedVersion: 2
+        x: 3263
+        y: 3204
+        width: 1617
+        height: 1577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9055b713baf66ad0800000000000000
+      internalID: -2709202478712926049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_31
+      rect:
+        serializedVersion: 2
+        x: 4893
+        y: 3204
+        width: 1618
+        height: 1580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49766aa5ac98b3710800000000000000
+      internalID: 1674083188695525268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1602
+        width: 1616
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9439822776c2790800000000000000
+      internalID: -7553548735002490398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_33
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1602
+        width: 1616
+        height: 1586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a1a428c35282660800000000000000
+      internalID: 7361174532751235636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_34
+      rect:
+        serializedVersion: 2
+        x: 3266
+        y: 1602
+        width: 1617
+        height: 1589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa1196cca900bd340800000000000000
+      internalID: 4889502485295206826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_35
+      rect:
+        serializedVersion: 2
+        x: 4896
+        y: 1602
+        width: 1618
+        height: 1592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89b56889ca707af0800000000000000
+      internalID: -400685360840590962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_36
+      rect:
+        serializedVersion: 2
+        x: 4899
+        y: 0
+        width: 1616
+        height: 1603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60407d33827a86a60800000000000000
+      internalID: 7667562156708529158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_37
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 1616
+        height: 1594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94581a91bfa487400800000000000000
+      internalID: 322089815684253001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_38
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 0
+        width: 1617
+        height: 1597
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1fb088b0cdfa1f0800000000000000
+      internalID: -1031363847559319097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castanyetaIdleSad_39
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 0
+        width: 1617
+        height: 1600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bfb6447508a0fbb0800000000000000
+      internalID: -4904235252827373645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      castanyetaIdleSad_0: 6223283620932281619
+      castanyetaIdleSad_1: -8184466501294266535
+      castanyetaIdleSad_10: 6389864543136332842
+      castanyetaIdleSad_11: -4784343731610808278
+      castanyetaIdleSad_12: -4632782184103829934
+      castanyetaIdleSad_13: 2028559282494485666
+      castanyetaIdleSad_14: -6703973974450980521
+      castanyetaIdleSad_15: -6191758468789518731
+      castanyetaIdleSad_16: -687189118114375535
+      castanyetaIdleSad_17: -111837384815066463
+      castanyetaIdleSad_18: 2704957426101689269
+      castanyetaIdleSad_19: -911415431229882063
+      castanyetaIdleSad_2: -8823121907427021741
+      castanyetaIdleSad_20: 5650193243822466705
+      castanyetaIdleSad_21: -1115385273644154180
+      castanyetaIdleSad_22: -1207348213895240251
+      castanyetaIdleSad_23: -5155864231115059129
+      castanyetaIdleSad_24: -4800397220828152934
+      castanyetaIdleSad_25: -293204831872810254
+      castanyetaIdleSad_26: -2188880019145744265
+      castanyetaIdleSad_27: -1247153611788664555
+      castanyetaIdleSad_28: 5484289238814309122
+      castanyetaIdleSad_29: 8738788063795643015
+      castanyetaIdleSad_3: -368982434226580473
+      castanyetaIdleSad_30: -2709202478712926049
+      castanyetaIdleSad_31: 1674083188695525268
+      castanyetaIdleSad_32: -7553548735002490398
+      castanyetaIdleSad_33: 7361174532751235636
+      castanyetaIdleSad_34: 4889502485295206826
+      castanyetaIdleSad_35: -400685360840590962
+      castanyetaIdleSad_36: 7667562156708529158
+      castanyetaIdleSad_37: 322089815684253001
+      castanyetaIdleSad_38: -1031363847559319097
+      castanyetaIdleSad_39: -4904235252827373645
+      castanyetaIdleSad_4: 9038223813910545014
+      castanyetaIdleSad_5: -616786547820844195
+      castanyetaIdleSad_6: 5697151264518273857
+      castanyetaIdleSad_7: -1174097700727583984
+      castanyetaIdleSad_8: -4478494131603071179
+      castanyetaIdleSad_9: -9161002371102042961
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
