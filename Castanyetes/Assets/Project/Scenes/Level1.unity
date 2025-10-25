@@ -1650,7 +1650,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1786756156}
         m_TargetAssemblyTypeName: Timer, Assembly-CSharp
-        m_MethodName: Pause
+        m_MethodName: PauseAndResume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

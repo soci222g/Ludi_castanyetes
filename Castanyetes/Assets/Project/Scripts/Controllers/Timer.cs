@@ -37,9 +37,21 @@ public class Timer : MonoBehaviour
 
     public void Resume()
     {
-        Time.timeScale = 1f;
+            Time.timeScale = 1f;
     }
 
+    public void PauseAndResume()
+    {
+        if (Time.timeScale > 0f)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+    }
+        
     public static string GetActualTimer()
     {
         return GameObject.FindObjectOfType<Timer>().timerText.text;
