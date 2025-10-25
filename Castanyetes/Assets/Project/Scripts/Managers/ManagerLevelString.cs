@@ -10,7 +10,7 @@ public class ManagerLevelString : MonoBehaviour
 
 
     private List<char> ListChars = new List<char>();
-    [SerializeField] private GameObject WinTest;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -44,8 +44,7 @@ public class ManagerLevelString : MonoBehaviour
                 WordList.RemoveAt(i);
 
                 if(WordList.Count == 0)
-                WinTest.SetActive(true);
-                // GetComponent<FadeInColors>().ShowElement();
+                GetComponent<FadeInColors>().ShowElement();
             }
 
         }
