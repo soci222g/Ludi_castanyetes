@@ -5637,11 +5637,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WordList:
-  - cabra
-  - cuina
-  - colla
-  - cursa
-  - crida
+  - abr
+  - uin
+  - oll
+  - urs
+  - rid
   numBoxes: 3
 --- !u!1 &1801187515
 GameObject:
