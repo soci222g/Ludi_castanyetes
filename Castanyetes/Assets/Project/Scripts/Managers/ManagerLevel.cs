@@ -14,6 +14,8 @@ public class ManagerLevelNum : MonoBehaviour
  
     private List<char> listChars = new List<char>();
 
+    [SerializeField] private AudioSource correct;
+    [SerializeField] private AudioSource error;
 
     
 
@@ -24,7 +26,9 @@ public class ManagerLevelNum : MonoBehaviour
         for (int i = 0; i < numBoxes; i++) {
             listChars.Add(' ');
         }
-        
+      
+
+
     }
 
 
@@ -127,12 +131,23 @@ public class ManagerLevelNum : MonoBehaviour
 
     private void CheckResult(int calcul, List<int> numUsedOrdened)
     {
+        
 
         if (calcul == finalNum)
         {
+            correct.Play();
             CheckNumAreCorrect(numUsedOrdened);
-          
+            return;
         }
+        for (int i = 0; i < listChars.Count; i++)
+        {
+            if(listChars[i] == ' ')
+            {
+                return;
+            }
+        }
+        error.Play();
+
     }
 
     private void CheckNumAreCorrect(List<int> numUsedOrdened)
