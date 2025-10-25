@@ -13,6 +13,7 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
     private Value Piece_value;
 
+    
 
     [SerializeField] private float snapPuzzle = 1.5f;
 
