@@ -1577,6 +1577,7 @@ GameObject:
   - component: {fileID: 572406019}
   - component: {fileID: 572406018}
   - component: {fileID: 572406017}
+  - component: {fileID: 572406020}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -1649,7 +1650,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1786756156}
         m_TargetAssemblyTypeName: Timer, Assembly-CSharp
-        m_MethodName: Pause
+        m_MethodName: PauseAndResume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 572406020}
+        m_TargetAssemblyTypeName: controlerMovement, Assembly-CSharp
+        m_MethodName: swapActiveElement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1697,6 +1710,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572406015}
   m_CullTransparentMesh: 1
+--- !u!114 &572406020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572406015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62b7b90b4dbd28c4f93c4a93cc1a4c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move:
+  - {fileID: 1454903257}
+  - {fileID: 2085408447}
+  - {fileID: 1221998272}
+  - {fileID: 1427161160}
+  - {fileID: 1738123516}
+  - {fileID: 391413577}
+  - {fileID: 1000660978}
+  - {fileID: 247959437}
+  - {fileID: 322727974}
+  - {fileID: 570547131}
 --- !u!1 &605768347
 GameObject:
   m_ObjectHideFlags: 0
