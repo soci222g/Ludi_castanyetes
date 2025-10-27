@@ -20,7 +20,7 @@ public class optionsControler : MonoBehaviour
 
     }
 
-  
+ 
     public void SetVolume()
     {
         audioMixer.SetFloat(grup, Mathf.Log10(slider.value) * 80f);
