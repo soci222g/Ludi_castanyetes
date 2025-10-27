@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Project/Scenes/InitialCinematic.unity
+    guid: 3ea0de04eb5e5934991e40ef4959c4aa
+  - enabled: 1
     path: Assets/Project/Scenes/MainMenu.unity
     guid: 4e2267ae4761fe542987885b119328d9
   - enabled: 1
@@ -14,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/Level1.unity
     guid: 22586b708cb461b42b4988981232722f
+  - enabled: 1
+    path: Assets/Project/Scenes/Level2.unity
+    guid: 17973393e905c5c4692dc7759d2567f2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
