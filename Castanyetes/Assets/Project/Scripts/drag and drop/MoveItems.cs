@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,6 +13,7 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
     private Value Piece_value;
 
+    
 
     [SerializeField] private float snapPuzzle = 1.5f;
 
@@ -27,11 +29,16 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
         mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-        startPosX = mousePos.x - this.transform.position.x;
-        startPosY = mousePos.y - this.transform.position.y;
+   
 
-     
-        Debug.Log("Moving");
+        for (int i = 0; i < correctForm.Count; i++)
+        { 
+            if(this.transform.position == correctForm[i].transform.position)
+            {
+                correctForm[i].GetComponent<reciveInfoNum>().resetPiceValue();
+            }
+        }
+
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -41,11 +48,15 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
             if (Mathf.Abs(this.transform.position.x - correctForm[i].transform.position.x) <= snapPuzzle &&
                 Mathf.Abs(this.transform.position.y - correctForm[i].transform.position.y) <= snapPuzzle)
             {
-                this.transform.position = correctForm[i].transform.position;
+                if (!correctForm[i].GetComponent<reciveInfoNum>().GetPlacerObject())
+                {
+                    this.transform.position = correctForm[i].transform.position;
 
-                //enviar dato del objeto
-                if(correctForm[i].GetComponent<reciveInfoNum>())
-                correctForm[i].GetComponent<reciveInfoNum>().setPice_Value(Piece_value.GetLeter());
+                    //enviar dato del objeto
+                    if (correctForm[i].GetComponent<reciveInfoNum>())
+                        correctForm[i].GetComponent<reciveInfoNum>().setPice_Value(Piece_value.GetLeter());
+                }
+               
             }
         }
     }

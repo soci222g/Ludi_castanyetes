@@ -1,7 +1,8 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class FadeInColors : MonoBehaviour
 {
@@ -10,17 +11,20 @@ public class FadeInColors : MonoBehaviour
     [SerializeField] private CanvasGroup middlePiece;
     [SerializeField] private CanvasGroup fourthPiece;
     [SerializeField] private CanvasGroup finalPiece;
+    [SerializeField] private GameObject win;
     [SerializeField] private float fadeOpacity = 0.66f;
     private bool fadeIn = false;
     private bool fadeOut = false;
+    private bool fadeInImage = true;
+    private int counter;
 
     public void ShowElement()
     {
         fadeIn = true;
     }
-    public void HideElement()
+    public void AddCounter()
     {
-        fadeOut = true;
+        counter++;
     }
 
     private void Start()
@@ -30,53 +34,64 @@ public class FadeInColors : MonoBehaviour
         secondPiece.alpha = 0;
         fourthPiece.alpha = 0;
         middlePiece.alpha = 0;
+        counter = 1;
     }
 
     private void Update()
     {
         if (fadeIn)
         {
-            if (initialPiece.alpha < fadeOpacity && finalPiece.alpha < fadeOpacity)
+            if (initialPiece.alpha < fadeOpacity && counter == 1)
             {
                 initialPiece.alpha += Time.deltaTime;
-                finalPiece.alpha += Time.deltaTime;
             }
-            if (initialPiece.alpha >= fadeOpacity / 3 && secondPiece.alpha < fadeOpacity && fourthPiece.alpha < fadeOpacity)
+            else if (secondPiece.alpha < fadeOpacity && counter == 2)
             {
                 secondPiece.alpha += Time.deltaTime;
-                fourthPiece.alpha += Time.deltaTime;
             }
-            if (secondPiece.alpha >= fadeOpacity / 3 && middlePiece.alpha < fadeOpacity)
+            else if (middlePiece.alpha < fadeOpacity && counter == 3)
             {
                 middlePiece.alpha += Time.deltaTime;
-                if (middlePiece.alpha >= fadeOpacity)
-                {
-                    fadeIn = false;
-                }
+            }
+            else if (fourthPiece.alpha < fadeOpacity && counter == 4)
+            {
+                fourthPiece.alpha += Time.deltaTime;
+            }
+            else if (finalPiece.alpha < fadeOpacity && counter == 5)
+            {
+                finalPiece.alpha += Time.deltaTime;
             }
 
+            if (initialPiece.alpha >= fadeOpacity && counter == 1)
+            {
+                AddCounter();
+                fadeIn = false;
+            }
+            else if (secondPiece.alpha >= fadeOpacity && counter == 2)
+            {
+                AddCounter();
+                fadeIn = false;
+            }
+            else if (middlePiece.alpha >= fadeOpacity && counter == 3)
+            {
+                AddCounter();
+                fadeIn = false;
+            }
+            else if (fourthPiece.alpha >= fadeOpacity && counter == 4)
+            {
+                AddCounter();
+                fadeIn = false;
+            }
+            else if (finalPiece.alpha >= fadeOpacity && counter == 5)
+            {
+                AddCounter();
+                fadeIn = false;
+            }
         }
-
-        if (fadeOut)
+        if (!fadeIn && counter == 6)
         {
-            if (initialPiece.alpha > 0 && finalPiece.alpha > 0)
-            {
-                initialPiece.alpha -= Time.deltaTime;
-                finalPiece.alpha -= Time.deltaTime;
-            }
-            if (initialPiece.alpha <= fadeOpacity - (fadeOpacity / 3) && secondPiece.alpha > 0 && fourthPiece.alpha > 0)
-            {
-                secondPiece.alpha -= Time.deltaTime;
-                fourthPiece.alpha -= Time.deltaTime;
-            }
-            if (secondPiece.alpha <= fadeOpacity - (fadeOpacity / 3) && middlePiece.alpha > 0)
-            {
-                middlePiece.alpha -= Time.deltaTime;
-                if (middlePiece.alpha == 0)
-                {
-                    fadeOut = false;
-                }
-            }
+            win.SetActive(true);
+            win.GetComponent<StarsController>().LevelFinished();
         }
     }
 }
