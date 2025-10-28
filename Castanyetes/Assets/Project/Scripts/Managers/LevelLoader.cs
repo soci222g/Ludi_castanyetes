@@ -7,26 +7,17 @@ public class LevelLoader : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private float duration = 1f;
-    [SerializeField] private string targetSceneName;
+    private string targetSceneName;
 
     void Start()
     {
-        // Make sure we have a canvas group
-        if (canvasGroup == null)
-        {
-            canvasGroup = GetComponent<CanvasGroup>();
-        }
-
-        // Start by fading in from black
         StartCoroutine(StartFadeIn());
     }
 
     IEnumerator StartFadeIn()
     {
-        // Start completely black
         canvasGroup.alpha = 1f;
 
-        // Fade to clear
         float timer = 0f;
         while (timer < duration)
         {
@@ -46,7 +37,6 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator FadeOutAndLoad()
     {
-        // Fade to black
         float timer = 0f;
         while (timer < duration)
         {
