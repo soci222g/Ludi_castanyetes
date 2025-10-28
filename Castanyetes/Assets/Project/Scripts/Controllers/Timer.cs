@@ -2,31 +2,47 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
         [SerializeField] private GameObject win;
     private float elapsedTime;
+    private bool isRunning = false;
 
-    void Start()
+    private void Start()
+    {
+        timerText.text = "02:30";
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2"))
+        {
+            Resume();
+            elapsedTime = 150f;
+            isRunning = true;
+        }
+    }
+
+    public void StartTimer()
     {
         Resume();
         elapsedTime = 150f;
-        timerText.text = "02:30";
+        isRunning = true;
     }
 
     void Update()
     {
-        elapsedTime -= Time.deltaTime;
-        int minutes = Mathf.FloorToInt(elapsedTime / 60f);
-        int seconds = Mathf.FloorToInt(elapsedTime % 60f);
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-
-        if (timerText.text == "00:00")
+        if (isRunning)
         {
-            win.SetActive(true);
-            win.GetComponent<StarsController>().LevelFailed();
+            elapsedTime -= Time.deltaTime;
+            int minutes = Mathf.FloorToInt(elapsedTime / 60f);
+            int seconds = Mathf.FloorToInt(elapsedTime % 60f);
+            timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+            if (timerText.text == "00:00")
+            {
+                win.SetActive(true);
+                win.GetComponent<StarsController>().LevelFailed();
+            }
         }
     }
 
