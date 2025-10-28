@@ -12,6 +12,8 @@ public class ManagerLevelString : MonoBehaviour
     private List<char> ListChars = new List<char>();
 
     private resetElements resElements;
+    [SerializeField] private bafaradaScreep bafarada;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,23 +39,23 @@ public class ManagerLevelString : MonoBehaviour
     {
         string FinalWord = "";
 
-     
-
         FinalWord = new string(ListChars.ToArray());
 
         Debug.Log(FinalWord);
-        for (int i = 0; i < WordList.Count; i++) {
-            if (WordList[i] == FinalWord) {
+        for (int i = 0; i < WordList.Count; i++)
+        {
+            if (WordList[i] == FinalWord)
+            {
+                bafarada.deleteElement(FinalWord);
                 WordList.RemoveAt(i);
-                GetComponent<FadeInColors>().ShowElement(); 
+                GetComponent<FadeInColors>().ShowElement();
                 resElements.ResetItems();
             }
 
         }
-
-
-
     }
-
+    
+    public List<string> GetListOfWords()
+        { return WordList; }
 
 }
