@@ -13,11 +13,14 @@ public class reciveInfoNum : MonoBehaviour
 
     [SerializeField] private int piss_Number;
 
+    private ParticleSystem ps;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         placedObject = false;
         TextElement = ' ';
+        ps = GetComponentInChildren<ParticleSystem>();
     }
 
 
@@ -27,6 +30,7 @@ public class reciveInfoNum : MonoBehaviour
     
         TextElement = value;
         placedObject = true;
+        ps.Play();
         if (Num != null) 
         Num.setElemetns(TextElement, piss_Number);
 
