@@ -1722,6 +1722,8 @@ GameObject:
   - component: {fileID: 541316116}
   - component: {fileID: 541316118}
   - component: {fileID: 541316117}
+  - component: {fileID: 541316120}
+  - component: {fileID: 541316119}
   m_Layer: 5
   m_Name: BAFARADA
   m_TagString: Untagged
@@ -1746,7 +1748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.845367, y: 0.684}
   m_AnchorMax: {x: 0.9361835, y: 0.8817132}
-  m_AnchoredPosition: {x: 0.5, y: 1.050003}
+  m_AnchoredPosition: {x: 0.5, y: 1.0500183}
   m_SizeDelta: {x: -1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &541316117
@@ -1787,6 +1789,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541316115}
   m_CullTransparentMesh: 1
+--- !u!114 &541316119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541316115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5a9ce77204f5940baace08c281d47b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTime: 0
+--- !u!114 &541316120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541316115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb44de1f2605044683dd13b183f9ef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1413289684}
+  SpriteDibujo:
+  - {fileID: -6797974408381830292, guid: 8815fb7abc524a9408d3eb8e0ce13a44, type: 3}
+  - {fileID: 4753571473698336448, guid: e5c46864f8cc50f43a0b8667711ccd10, type: 3}
+  - {fileID: -3118438006057599327, guid: 6df469025c2379249b5441971135a1d9, type: 3}
+  - {fileID: 4815476061570213978, guid: 8388c63261127ec4db9b72e59f66e3f8, type: 3}
+  - {fileID: 7345653493798146870, guid: f872a9b682b948f4bb46293e2e04537c, type: 3}
+  ReferenceBafarada: {fileID: 541316117}
+  ImageToPutReference: {fileID: 629235898}
 --- !u!1 &560166690
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,7 +2162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.115897864, y: 0.2}
   m_AnchorMax: {x: 0.87381715, y: 0.90000004}
-  m_AnchoredPosition: {x: 0.5, y: -4.999996}
+  m_AnchoredPosition: {x: 0.5, y: -5}
   m_SizeDelta: {x: 2.4899979, y: 4.8499985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629235898
@@ -3053,7 +3089,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.7
+  m_fontSize: 62.3
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4718,6 +4754,7 @@ MonoBehaviour:
   - uin
   - urt
   numBoxes: 3
+  bafarada: {fileID: 541316120}
 --- !u!114 &1413289685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4732,13 +4769,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemsPlace:
   - {fileID: 521751979}
-  - {fileID: 0}
   - {fileID: 1439019108}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 325925476}
   - {fileID: 1391484139}
-  - {fileID: 0}
   - {fileID: 496693633}
   - {fileID: 866037276}
   boxes:

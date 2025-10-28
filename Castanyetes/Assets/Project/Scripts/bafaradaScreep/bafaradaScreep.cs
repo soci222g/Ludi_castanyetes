@@ -1,28 +1,30 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class bafaradaScreep : MonoBehaviour
 {
     [SerializeField] private ManagerLevelString manager;
-    [SerializeField] private List<Image> SpriteDibujo = new List<Image>();
-    private Dictionary<string, Image> mapBafarades;
+    [SerializeField] private List<Sprite> SpriteDibujo = new List<Sprite>();
+    private Dictionary<string, Sprite> mapBafarades = new Dictionary<string, Sprite>();
 
 
-    private Image ReferenceBafarada;
-    private Image ImageToPutReference;
-
+   [SerializeField] private Image ReferenceBafarada;
+   [SerializeField] private Image ImageToPutReference;
+                    private TimeBafarada timer;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-      ReferenceBafarada = GetComponent<Image>();
+      
         ReferenceBafarada.enabled = false;  
            
-        ImageToPutReference = GetComponentInChildren<Image>();
+
         ImageToPutReference.enabled = false;
+        timer = GetComponent<TimeBafarada>();
         initializeImage();
     }
 
@@ -42,18 +44,27 @@ public class bafaradaScreep : MonoBehaviour
        }
         ImageToPutReference.enabled = false;
         ReferenceBafarada.enabled = false;
-
+        timer.ResetTimerBafarada();
     }
 
     public void GetRandomImage()
     {
+
         int randomNum = manager.GetListOfWords().Count;
+
+        randomNum = Random.Range(0, randomNum - 1);
+
+        for(int i = 0;i < manager.GetListOfWords().Count; i++)
+        {
+            if(randomNum == i)
+           activate(mapBafarades.ElementAt(i).Key);
+        }
     }
 
     public void activate(string element)
     {
         ReferenceBafarada.enabled = true;
-        ImageToPutReference = mapBafarades[element];
+        ImageToPutReference.sprite = mapBafarades[element];
 
         ImageToPutReference.enabled = true;
 
