@@ -1735,6 +1735,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossfade
       objectReference: {fileID: 0}
+    - target: {fileID: 7400375869990455022, guid: ef48e5d264ebd5f4ab82d84b5b339e3a, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1371657951}
+    - target: {fileID: 7400375869990455022, guid: ef48e5d264ebd5f4ab82d84b5b339e3a, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8729527226420460996, guid: ef48e5d264ebd5f4ab82d84b5b339e3a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
