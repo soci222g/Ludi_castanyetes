@@ -11,6 +11,8 @@ public class ManagerLevelString : MonoBehaviour
 
     private List<char> ListChars = new List<char>();
 
+    private resetElements resElements;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +20,7 @@ public class ManagerLevelString : MonoBehaviour
         {
             ListChars.Add(' ');
         }
+        resElements = GetComponent<resetElements>();
     }
 
     public void setElemetns(char GetElements, int place)
@@ -42,7 +45,8 @@ public class ManagerLevelString : MonoBehaviour
         for (int i = 0; i < WordList.Count; i++) {
             if (WordList[i] == FinalWord) {
                 WordList.RemoveAt(i);
-                GetComponent<FadeInColors>().ShowElement();                
+                GetComponent<FadeInColors>().ShowElement(); 
+                resElements.ResetItems();
             }
 
         }

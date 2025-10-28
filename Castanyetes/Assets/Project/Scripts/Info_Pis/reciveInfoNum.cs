@@ -26,8 +26,8 @@ public class reciveInfoNum : MonoBehaviour
     {
     
         TextElement = value;
-
-        if(Num != null) 
+        placedObject = true;
+        if (Num != null) 
         Num.setElemetns(TextElement, piss_Number);
 
 
@@ -35,12 +35,13 @@ public class reciveInfoNum : MonoBehaviour
             str.setElemetns(TextElement, piss_Number);
 
 
-        placedObject = true;
+        
     }
 
     public void resetPiceValue()
     {
         TextElement = ' ';
+        placedObject = false;
 
         if (Num != null)
             Num.setElemetns(TextElement, piss_Number);
@@ -50,6 +51,6 @@ public class reciveInfoNum : MonoBehaviour
             str.setElemetns(TextElement, piss_Number);
 
 
-        placedObject = false;
+       
     }
 }

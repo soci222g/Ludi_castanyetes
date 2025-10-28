@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     
-   
+   private Vector2 m_Position;
     
     private float startPosX, startPosY;
 
@@ -22,6 +22,7 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
     private void Start()
     {
         Piece_value = GetComponent<Value>();
+        m_Position = new Vector2(transform.position.x, transform.position.y);
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -68,5 +69,10 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
         this.gameObject.transform.position = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.position.z);
+    }
+
+    public void initialPos()
+    {
+        transform.position = m_Position;
     }
 }

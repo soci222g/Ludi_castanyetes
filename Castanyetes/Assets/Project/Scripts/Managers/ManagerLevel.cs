@@ -17,7 +17,7 @@ public class ManagerLevelNum : MonoBehaviour
     [SerializeField] private AudioSource correct;
     [SerializeField] private AudioSource error;
 
-    
+    private resetElements resElements;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,7 +27,7 @@ public class ManagerLevelNum : MonoBehaviour
             listChars.Add(' ');
         }
       
-
+        resElements = GetComponent<resetElements>();
 
     }
 
@@ -137,6 +137,7 @@ public class ManagerLevelNum : MonoBehaviour
         {
             correct.Play();
             CheckNumAreCorrect(numUsedOrdened);
+            resElements.ResetItems();
             return;
         }
         for (int i = 0; i < listChars.Count; i++)
