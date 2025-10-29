@@ -11,13 +11,18 @@ public class ManagerLevelNum : MonoBehaviour
     [SerializeField] private int numBoxes;
     [SerializeField] private List<int> numsUsed;
     [SerializeField] private int numCorrectAnser;
- 
+
+    [SerializeField] private llibereta llibretaCode;
+
+
     private List<char> listChars = new List<char>();
 
     [SerializeField] private AudioSource correct;
     [SerializeField] private AudioSource error;
 
     private resetElements resElements;
+
+    
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -131,13 +136,14 @@ public class ManagerLevelNum : MonoBehaviour
 
     private void CheckResult(int calcul, List<int> numUsedOrdened)
     {
-        
+        string calculoMatesEnString = new string(listChars.ToArray());
 
         if (calcul == finalNum)
         {
             correct.Play();
             CheckNumAreCorrect(numUsedOrdened);
             resElements.ResetItems();
+            llibretaCode.SetTextCorrecto(calculoMatesEnString, false);
             return;
         }
         for (int i = 0; i < listChars.Count; i++)
