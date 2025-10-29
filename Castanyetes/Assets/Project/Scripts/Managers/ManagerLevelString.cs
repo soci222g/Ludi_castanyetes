@@ -14,6 +14,9 @@ public class ManagerLevelString : MonoBehaviour
     private resetElements resElements;
     [SerializeField] private bafaradaScreep bafarada;
 
+    [SerializeField] private AudioSource CorrectAudio;
+    [SerializeField] private AudioSource badAudio;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,19 +43,30 @@ public class ManagerLevelString : MonoBehaviour
         string FinalWord = "";
 
         FinalWord = new string(ListChars.ToArray());
+      
 
         Debug.Log(FinalWord);
         for (int i = 0; i < WordList.Count; i++)
         {
             if (WordList[i] == FinalWord)
             {
+                CorrectAudio.Play();
                 bafarada.deleteElement(FinalWord);
                 WordList.RemoveAt(i);
                 GetComponent<FadeInColors>().ShowElement();
                 resElements.ResetItems();
+                return;
             }
-
+            
         }
+        for (int i = 0; i < ListChars.Count; i++)
+        {
+            if (ListChars[i] == ' ')
+            {
+                return;
+            }
+        }
+        badAudio.Play();
     }
     
     public List<string> GetListOfWords()
