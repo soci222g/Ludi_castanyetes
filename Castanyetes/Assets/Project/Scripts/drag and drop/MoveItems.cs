@@ -13,7 +13,7 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
     private Value Piece_value;
 
-    
+    private AudioSource placeSound;
 
     [SerializeField] private float snapPuzzle = 1.5f;
 
@@ -23,6 +23,7 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
     {
         Piece_value = GetComponent<Value>();
         m_Position = new Vector2(transform.position.x, transform.position.y);
+        placeSound = GetComponent<AudioSource>();
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -56,6 +57,8 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
                     //enviar dato del objeto
                     if (correctForm[i].GetComponent<reciveInfoNum>())
                         correctForm[i].GetComponent<reciveInfoNum>().setPice_Value(Piece_value.GetLeter());
+
+                    placeSound.Play();
                 }
                
             }
