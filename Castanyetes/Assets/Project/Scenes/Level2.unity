@@ -7207,7 +7207,7 @@ MonoBehaviour:
   - {fileID: -6675775059319080986, guid: 0c282c09565b49f4ca0a907ab65417e8, type: 3}
   - {fileID: -8575076116656236077, guid: 78fdc71d0a26cd64c82662b73228b4bc, type: 3}
   - {fileID: 3991281548878745981, guid: 8d14213465e3fdc4ba1028ac1194b520, type: 3}
-  - {fileID: -554839306621780570, guid: b9fcd8d5be117974fb824d10a9a9c89b, type: 3}
+  - {fileID: 21300000, guid: 04b58fe9973b47f4f9f467d651087dde, type: 3}
   ReferenceBafarada: {fileID: 602552968}
   ImageToPutReference: {fileID: 1398293948}
 --- !u!114 &602552968
@@ -13312,8 +13312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a47e0e701961bc64392ecb0d4f6dd623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 0}
-  controlerMov: {fileID: 0}
+  timer: {fileID: 410158496}
+  controlerMov: {fileID: 1815658561}
 --- !u!95 &948381156
 Animator:
   serializedVersion: 7

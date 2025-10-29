@@ -14,12 +14,6 @@ public class Timer : MonoBehaviour
     private void Start()
     {
         timerText.text = "02:30";
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level2"))
-        {
-            Resume();
-            elapsedTime = 150f;
-            isRunning = true;
-        }
     }
 
     public void StartTimer()
