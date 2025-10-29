@@ -16187,15 +16187,12 @@ RectTransform:
   - {fileID: 349110836}
   - {fileID: 598051487}
   - {fileID: 1115048938}
-  - {fileID: 1083505937}
   - {fileID: 534115209}
   - {fileID: 466981129}
   - {fileID: 1376434398}
-  - {fileID: 1205623173}
   - {fileID: 2066762046}
   - {fileID: 1626115344}
   - {fileID: 335219693}
-  - {fileID: 1773888846}
   - {fileID: 356085614}
   - {fileID: 1073025276}
   - {fileID: 1990368786}
@@ -16210,6 +16207,9 @@ RectTransform:
   - {fileID: 729155629}
   - {fileID: 750625055}
   - {fileID: 1741832776}
+  - {fileID: 1773888846}
+  - {fileID: 1205623173}
+  - {fileID: 1083505937}
   - {fileID: 845990442}
   - {fileID: 757423697}
   - {fileID: 319209723}
