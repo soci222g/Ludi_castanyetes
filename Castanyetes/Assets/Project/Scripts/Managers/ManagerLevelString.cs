@@ -12,6 +12,7 @@ public class ManagerLevelString : MonoBehaviour
     private List<char> ListChars = new List<char>();
 
     private resetElements resElements;
+    private colorFondomal fondoMal;
     [SerializeField] private bafaradaScreep bafarada;
 
     [SerializeField] private AudioSource CorrectAudio;
@@ -26,6 +27,7 @@ public class ManagerLevelString : MonoBehaviour
             ListChars.Add(' ');
         }
         resElements = GetComponent<resetElements>();
+        fondoMal = GetComponent<colorFondomal>();
     }
 
     public void setElemetns(char GetElements, int place)
@@ -68,6 +70,9 @@ public class ManagerLevelString : MonoBehaviour
             }
         }
         badAudio.Play();
+        fondoMal.activateElements();
+        resElements.ResetItems();
+
     }
     
     public List<string> GetListOfWords()
