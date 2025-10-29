@@ -2782,9 +2782,9 @@ RectTransform:
   m_Father: {fileID: 1300996048}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.086710036, y: 0.8618044}
-  m_AnchorMax: {x: 0.13413008, y: 0.9665633}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.2700043, y: -1}
+  m_AnchorMax: {x: 0.13549061, y: 0.9665633}
+  m_AnchoredPosition: {x: -0.36499023, y: 0}
+  m_SizeDelta: {x: -0.7299957, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &572406017
 MonoBehaviour:
@@ -3674,7 +3674,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16.4
+  m_fontSize: 25.05
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10249,9 +10249,9 @@ RectTransform:
   - {fileID: 165772195}
   - {fileID: 349433432}
   - {fileID: 1912723506}
-  - {fileID: 572406016}
   - {fileID: 1561611897}
   - {fileID: 435907912}
+  - {fileID: 572406016}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10619,7 +10619,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.6
+  m_fontSize: 42.8
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -16754,9 +16754,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1561611898}
-        m_TargetAssemblyTypeName: MainMenuGo, Assembly-CSharp
-        m_MethodName: CanviarEscena
+      - m_Target: {fileID: 1982636486}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17892,7 +17892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.84866685, y: 0.38300002}
   m_AnchorMax: {x: 0.97972304, y: 0.76400006}
-  m_AnchoredPosition: {x: -1.4999695, y: -1}
+  m_AnchoredPosition: {x: -1.5, y: -1}
   m_SizeDelta: {x: -3, y: -6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1912723507
@@ -18214,6 +18214,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef48e5d264ebd5f4ab82d84b5b339e3a, type: 3}
+--- !u!114 &1982636486 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4129896869594500868, guid: ef48e5d264ebd5f4ab82d84b5b339e3a, type: 3}
+  m_PrefabInstance: {fileID: 1982636485}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3e55fd398e30f498ec7a2ca8953a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2008926467
 GameObject:
   m_ObjectHideFlags: 0
