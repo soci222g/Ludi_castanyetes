@@ -6,7 +6,7 @@ public class ManagerLevelString : MonoBehaviour
 {
     [SerializeField] private List<string> WordList = new List<string>();
     [SerializeField] private int numBoxes;
-
+    [SerializeField] private llibereta llibretaCode;
 
 
     private List<char> ListChars = new List<char>();
@@ -55,6 +55,7 @@ public class ManagerLevelString : MonoBehaviour
                 WordList.RemoveAt(i);
                 GetComponent<FadeInColors>().ShowElement();
                 resElements.ResetItems();
+                llibretaCode.SetTextCorrecto(FinalWord,true);
                 return;
             }
             
