@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 5fb7699859d6ccc49aa4df512c7185d8
+guid: 2aee7c1fb46c7e74a9ba3af09bd8b0b3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8717387167107123004
-    second: plataformes-n1_0
-  - first:
-      213: -5410033895072741574
-    second: plataformes-n1_1
-  - first:
-      213: -3021075141318152573
-    second: plataformes-n1_2
-  - first:
-      213: 3550037548709453833
-    second: plataformes-n1_3
-  - first:
-      213: 5212695233500929431
-    second: plataformes-n1_4
+      213: -6189535244343893811
+    second: torre-castanyes-idle18_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,6 +97,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -125,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plataformes-n1_0
+      name: torre-castanyes-idle18_0
       rect:
         serializedVersion: 2
-        x: 198
-        y: 442
-        width: 252
-        height: 138
+        x: 178
+        y: 0
+        width: 655
+        height: 2761
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,96 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c8f707ee8e950780800000000000000
-      internalID: -8717387167107123004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plataformes-n1_1
-      rect:
-        serializedVersion: 2
-        x: 868
-        y: 421
-        width: 252
-        height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a37cd5506d2bbe4b0800000000000000
-      internalID: -5410033895072741574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plataformes-n1_2
-      rect:
-        serializedVersion: 2
-        x: 1202
-        y: 508
-        width: 252
-        height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 38ee7f15a2cf216d0800000000000000
-      internalID: -3021075141318152573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plataformes-n1_3
-      rect:
-        serializedVersion: 2
-        x: 525
-        y: 337
-        width: 252
-        height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 90020267754444130800000000000000
-      internalID: 3550037548709453833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plataformes-n1_4
-      rect:
-        serializedVersion: 2
-        x: 1524
-        y: 101
-        width: 252
-        height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79dd13362b6375840800000000000000
-      internalID: 5212695233500929431
+      spriteID: dc02f142d7a5a1aa0800000000000000
+      internalID: -6189535244343893811
       vertices: []
       indices: 
       edges: []
@@ -238,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plataformes-n1_0: -8717387167107123004
-      plataformes-n1_1: -5410033895072741574
-      plataformes-n1_2: -3021075141318152573
-      plataformes-n1_3: 3550037548709453833
-      plataformes-n1_4: 5212695233500929431
+      torre-castanyes-idle18_0: -6189535244343893811
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

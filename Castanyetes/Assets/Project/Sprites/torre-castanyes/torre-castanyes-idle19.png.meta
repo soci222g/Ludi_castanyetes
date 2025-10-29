@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 65b781ed64053d74bb75f5213a86379a
+guid: 6285ad32ced042340845357dd90c144c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5182422703092390785
-    second: =6_0
-  - first:
-      213: 1033943897886624671
-    second: =6_1
-  - first:
-      213: -7699122986859263295
-    second: =6_2
-  - first:
-      213: -1747009797707206554
-    second: =6_3
+      213: -3228180649475967721
+    second: torre-castanyes-idle19_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -119,7 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -135,35 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: =6_0
+      name: torre-castanyes-idle19_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 66
-        width: 93
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 18bddb5adf9abe740800000000000000
-      internalID: 5182422703092390785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: =6_1
-      rect:
-        serializedVersion: 2
-        x: 108
+        x: 178
         y: 0
-        width: 115
-        height: 193
+        width: 633
+        height: 2763
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,52 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9b073f3f7e495e00800000000000000
-      internalID: 1033943897886624671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: =6_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 15
-        width: 93
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ca85366f68372590800000000000000
-      internalID: -7699122986859263295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: =6_3
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 11
-        width: 17
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 660f88458df51c7e0800000000000000
-      internalID: -1747009797707206554
+      spriteID: 715f13d8dc23333d0800000000000000
+      internalID: -3228180649475967721
       vertices: []
       indices: 
       edges: []
@@ -226,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      =6_0: 5182422703092390785
-      =6_1: 1033943897886624671
-      =6_2: -7699122986859263295
-      =6_3: -1747009797707206554
+      torre-castanyes-idle19_0: -3228180649475967721
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
