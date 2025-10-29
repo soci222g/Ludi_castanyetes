@@ -20055,6 +20055,8 @@ MonoBehaviour:
   - urt
   numBoxes: 3
   bafarada: {fileID: 602552967}
+  CorrectAudio: {fileID: 1385365645}
+  badAudio: {fileID: 817089399}
 --- !u!114 &1763512607
 MonoBehaviour:
   m_ObjectHideFlags: 0
