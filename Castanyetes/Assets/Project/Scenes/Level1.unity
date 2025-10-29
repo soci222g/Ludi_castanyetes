@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024453a5afedeed4ba85b060ab6306e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPuzzle: 0.5
+  snapPuzzle: 1
   correctForm:
   - {fileID: 1793705787}
   - {fileID: 1221681776}
@@ -1222,7 +1222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024453a5afedeed4ba85b060ab6306e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPuzzle: 0.5
+  snapPuzzle: 1
   correctForm:
   - {fileID: 1793705787}
   - {fileID: 1221681776}
@@ -1663,7 +1663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024453a5afedeed4ba85b060ab6306e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPuzzle: 0.5
+  snapPuzzle: 1
   correctForm:
   - {fileID: 1793705787}
   - {fileID: 1221681776}
@@ -2632,7 +2632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024453a5afedeed4ba85b060ab6306e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPuzzle: 0.5
+  snapPuzzle: 1
   correctForm:
   - {fileID: 1793705787}
   - {fileID: 1221681776}
@@ -3863,7 +3863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024453a5afedeed4ba85b060ab6306e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPuzzle: 0.5
+  snapPuzzle: 1
   correctForm:
   - {fileID: 1793705787}
   - {fileID: 1221681776}
@@ -10007,7 +10007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024453a5afedeed4ba85b060ab6306e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPuzzle: 0.5
+  snapPuzzle: 1
   correctForm:
   - {fileID: 1793705787}
   - {fileID: 1221681776}
@@ -10959,7 +10959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024453a5afedeed4ba85b060ab6306e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPuzzle: 0.5
+  snapPuzzle: 1
   correctForm:
   - {fileID: 1793705787}
   - {fileID: 1221681776}
@@ -16394,7 +16394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024453a5afedeed4ba85b060ab6306e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPuzzle: 0.5
+  snapPuzzle: 1
   correctForm:
   - {fileID: 1793705787}
   - {fileID: 1221681776}
@@ -17179,7 +17179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024453a5afedeed4ba85b060ab6306e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPuzzle: 0.5
+  snapPuzzle: 1
   correctForm:
   - {fileID: 1793705787}
   - {fileID: 1221681776}
@@ -23317,7 +23317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024453a5afedeed4ba85b060ab6306e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPuzzle: 0.5
+  snapPuzzle: 1
   correctForm:
   - {fileID: 1793705787}
   - {fileID: 1221681776}
