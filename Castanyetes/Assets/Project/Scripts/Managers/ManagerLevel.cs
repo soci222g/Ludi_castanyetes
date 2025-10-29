@@ -21,8 +21,9 @@ public class ManagerLevelNum : MonoBehaviour
     [SerializeField] private AudioSource error;
 
     private resetElements resElements;
+    private colorFondomal fondoMal;
 
-    
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,6 +34,7 @@ public class ManagerLevelNum : MonoBehaviour
         }
       
         resElements = GetComponent<resetElements>();
+        fondoMal = GetComponent<colorFondomal>();
 
     }
 
@@ -154,7 +156,8 @@ public class ManagerLevelNum : MonoBehaviour
             }
         }
         error.Play();
-
+        fondoMal.activateElements();
+        resElements.ResetItems();
     }
 
     private void CheckNumAreCorrect(List<int> numUsedOrdened)

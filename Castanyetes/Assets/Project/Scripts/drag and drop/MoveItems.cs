@@ -15,7 +15,7 @@ public class MoveItems : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
     private AudioSource placeSound;
 
-    [SerializeField] private float snapPuzzle = 1.5f;
+    [SerializeField] private float snapPuzzle = 2f;
 
     [SerializeField] private List<GameObject> correctForm;
 
