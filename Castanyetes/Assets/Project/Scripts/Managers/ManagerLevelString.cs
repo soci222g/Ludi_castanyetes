@@ -14,6 +14,9 @@ public class ManagerLevelString : MonoBehaviour
     private resetElements resElements;
     [SerializeField] private bafaradaScreep bafarada;
 
+    [SerializeField] private AudioSource CorrectAudio;
+    [SerializeField] private AudioClip badAudio;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,6 +49,7 @@ public class ManagerLevelString : MonoBehaviour
         {
             if (WordList[i] == FinalWord)
             {
+                CorrectAudio.Play();
                 bafarada.deleteElement(FinalWord);
                 WordList.RemoveAt(i);
                 GetComponent<FadeInColors>().ShowElement();

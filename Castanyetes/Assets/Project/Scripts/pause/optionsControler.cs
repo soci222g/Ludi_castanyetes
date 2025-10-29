@@ -17,7 +17,6 @@ public class optionsControler : MonoBehaviour
     private void Awake()
     {
         slider = GetComponent<Slider>();
-
     }
 
  
