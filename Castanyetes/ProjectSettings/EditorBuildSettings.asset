@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Project/Scenes/InitialCinematic.unity
     guid: 3ea0de04eb5e5934991e40ef4959c4aa
   - enabled: 1

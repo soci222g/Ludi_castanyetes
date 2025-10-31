@@ -5142,8 +5142,8 @@ CanvasGroup:
   m_GameObject: {fileID: 97389678}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &108037107
 GameObject:
@@ -5277,8 +5277,8 @@ CanvasGroup:
   m_GameObject: {fileID: 108037107}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &120249850
 GameObject:
@@ -5622,8 +5622,8 @@ CanvasGroup:
   m_GameObject: {fileID: 177666384}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!61 &177666386
 BoxCollider2D:
@@ -7065,7 +7065,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.3
+  m_fontSize: 40.95
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -23026,7 +23026,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.2
+  m_fontSize: 25.05
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
